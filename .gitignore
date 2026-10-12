@@ -1,0 +1,22 @@
+# Dependențe și build
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+next-env.d.ts
+
+# Variabile de mediu (cheile reale nu intră niciodată în git)
+.env
+.env.*
+!.env.example
+
+# Rezultatele verificărilor locale (capturi de ecran etc.)
+test-results/
+
+# Fișierul video original de la client (versiunile optimizate sunt în public/video/)
+Video Background.mp4
+
+# Sistem
+.DS_Store
+Thumbs.db
+npm-debug.log*
