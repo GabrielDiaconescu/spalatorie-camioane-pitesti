@@ -302,7 +302,7 @@ a:hover {
   background: color-mix(in srgb, var(--culoare-buton) 8%, transparent);
 }
 
-/* Varianta secundară pe fundal închis: albastrul nu are contrast suficient pe #111827. */
+/* Varianta secundară pe fundal închis: albastrul are doar 3,4:1 contrast pe culoarea principală. */
 .btn--on-dark {
   background: transparent;
   border-color: var(--culoare-text-pe-principala);

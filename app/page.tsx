@@ -6,7 +6,7 @@ import { pageMetadata } from "@/lib/metadata";
 import { primaryAction, site, telHref } from "@/lib/site";
 
 export const metadata = pageMetadata({
-  title: "Spălătorie camioane în Pitești – flote, TIR-uri și semiremorci",
+  title: "Spălătorie camioane Pitești – flote, TIR-uri și semiremorci",
   description:
     "Spălare exterioară și igienizare pentru camioane, capete tractor și semiremorci în Pitești. Contracte pentru flote. Programează o spălare: 0745 999 999.",
   path: "/",

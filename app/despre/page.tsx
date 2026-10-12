@@ -4,7 +4,7 @@ import { CtaBand, PageHero, PhotoPlaceholder, SectionHeader } from "@/components
 import { pageMetadata } from "@/lib/metadata";
 
 export const metadata = pageMetadata({
-  title: "Despre noi – spălătorie profesională pentru camioane, Pitești",
+  title: "Despre noi – spălătorie profesională de camioane, Pitești",
   description:
     "Spălătorie pentru camioane, capete tractor și semiremorci din Pitești. Lucrăm cu transportatori locali și internaționali, prin contracte pe termen lung.",
   path: "/despre",
