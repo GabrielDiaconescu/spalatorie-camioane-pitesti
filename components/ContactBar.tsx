@@ -9,7 +9,7 @@ export function ContactBar() {
       <div className="contact-bar">
         <a href={telHref} className="btn btn--primary" aria-label={`Sună acum la ${site.phone.display}`}>
           <Icon name="phone" size="sm" />
-          Sună: {site.phone.display}
+          Sună acum
         </a>
         <a
           href={whatsappHref}

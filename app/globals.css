@@ -419,7 +419,9 @@ a:hover {
 .header-phone {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: var(--spatiu-2);
+  min-width: 48px;
   min-height: 48px;
   font-weight: 600;
   text-decoration: none;
@@ -895,6 +897,11 @@ a:hover {
   align-items: center;
 }
 
+.contact-list .card__icon {
+  margin: 0;
+  background: var(--culoare-secundara);
+}
+
 .contact-list__label {
   display: block;
   font-size: 0.875rem;
@@ -1202,7 +1209,9 @@ a:hover {
   font-size: 1rem;
 }
 
-.field__input:focus {
+/* :focus-within acoperă și butonul de calendar din câmpul de dată (care primește focus separat în Chrome). */
+.field__input:focus,
+.field__input:focus-within {
   outline: 3px solid var(--culoare-focus);
   outline-offset: 2px;
 }
@@ -1285,7 +1294,13 @@ textarea.field__input {
   background: var(--culoare-secundara);
 }
 
-/* ---------- Text lung (pagini legale) ---------- */
+/* ---------- Text lung ---------- */
+.stack {
+  display: grid;
+  gap: var(--spatiu-5);
+  align-content: start;
+}
+
 .prose {
   display: grid;
   gap: var(--spatiu-4);
@@ -1355,6 +1370,7 @@ textarea.field__input {
 }
 
 .site-footer__bottom {
+  max-width: none;
   margin-top: var(--spatiu-6);
   padding-top: var(--spatiu-5);
   border-top: 1px solid var(--culoare-contur-pe-principala);
@@ -1373,7 +1389,7 @@ textarea.field__input {
 
 @media (min-width: 1024px) {
   .site-footer__grid {
-    grid-template-columns: 1.4fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
 
